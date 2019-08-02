@@ -241,7 +241,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【讲课】8-2网络流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yurzhang">
@@ -258,7 +258,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+                <a href="/【讲课】8-2网络流/" class="post-title-link" itemprop="url">【讲课】8.2网络流</a>
               
             
           </h1>
@@ -277,8 +277,12 @@
                 
               
 
-              <time title="创建时间：2019-08-02 15:12:16" itemprop="dateCreated datePublished" datetime="2019-08-02T15:12:16+08:00">2019-08-02</time>
+              <time title="创建时间：2019-08-02 10:22:45 / 修改时间：17:35:02" itemprop="dateCreated datePublished" datetime="2019-08-02T10:22:45+08:00">2019-08-02</time>
             </span>
+          
+            
+
+            
           
 
           <br>
@@ -292,15 +296,931 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
-            <p>
-              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-              ...
-            </p>
+          <h1 id="8-2-网络流选讲"><a href="#8-2-网络流选讲" class="headerlink" title="8.2 网络流选讲"></a>8.2 网络流选讲</h1><p>菊开讲课，必属精品！</p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/hello-world/#more" rel="contents">
+              <a class="btn" href="/【讲课】8-2网络流/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【题解】-Luogu3383-线性筛素数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yurzhang">
+      <meta itemprop="description" content="眩しさだけは、忘れなかった。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yurzhang's Blog">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/【题解】-Luogu3383-线性筛素数/" class="post-title-link" itemprop="url">【题解】[Luogu3383]线性筛素数</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-30 15:16:11" itemprop="dateCreated datePublished" datetime="2019-07-30T15:16:11+08:00">2019-07-30</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-02 17:38:36" itemprop="dateModified" datetime="2019-08-02T17:38:36+08:00">2019-08-02</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>此处[题面](<a href="https://www.luogu.org/problem/P3383" target="_blank" rel="noopener">https://www.luogu.org/problem/P3383</a>)</p>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>首先说一下，这个科技是我在 $\text{Min_25}$ 的博客里看见的，那篇博客是 $2017$ 年的了，去翻了下提交记录发现[论文哥](<a href="https://www.luogu.org/space/show?uid=5643)也用了这个科技，所以也并不是什么新东西。有兴趣的也可以去阅读一下[那篇博客](https://min-25.hatenablog.com/entry/2017/08/20/171214)。" target="_blank" rel="noopener">https://www.luogu.org/space/show?uid=5643)也用了这个科技，所以也并不是什么新东西。有兴趣的也可以去阅读一下[那篇博客](https://min-25.hatenablog.com/entry/2017/08/20/171214)。</a></p>
+<p>然后，虽然这个题是线性筛素数，但是这篇题解并不是讲筛法的，而是一些奇技淫巧。<strong>若是想学习素数筛法的可以跳过这篇题解了。</strong></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/【题解】-Luogu3383-线性筛素数/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【题解】-Luogu5373-多项式复合函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yurzhang">
+      <meta itemprop="description" content="眩しさだけは、忘れなかった。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yurzhang's Blog">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/【题解】-Luogu5373-多项式复合函数/" class="post-title-link" itemprop="url">【题解】[Luogu5373]多项式复合函数</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-02 12:37:19" itemprop="dateCreated datePublished" datetime="2019-06-02T12:37:19+08:00">2019-06-02</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-02 17:40:09" itemprop="dateModified" datetime="2019-08-02T17:40:09+08:00">2019-08-02</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>此处[题面](<a href="https://www.luogu.org/problem/P5373" target="_blank" rel="noopener">https://www.luogu.org/problem/P5373</a>)</p>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这是这道题复杂度比较正确的一个<del>常数奇大无比的</del>算法，源自 $\text{R.P.BRENT}$ 和 $\text{H.T.KUNG}$ 在 $1978$ 年发表的论文（也就是题面里说的那个全嘤文pdf），我在 $\text{5月15日}$ 蒯到手之后肝了一个晚上，在神犇 rqy 的帮助下成功地写出了[66分](<a href="https://www.luogu.org/recordnew/show/19052439)点名被卡做法~~awsl~~，后来研究别人代码的时候发现了" target="_blank" rel="noopener">https://www.luogu.org/recordnew/show/19052439)点名被卡做法~~awsl~~，后来研究别人代码的时候发现了</a> <code>预处理原根</code> 这种神奇操作，于是总算成功[AC](<a href="https://www.luogu.org/recordnew/show/19554564)。" target="_blank" rel="noopener">https://www.luogu.org/recordnew/show/19554564)。</a></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/【题解】-Luogu5373-多项式复合函数/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【题解】-Luogu5431-乘法逆元2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yurzhang">
+      <meta itemprop="description" content="眩しさだけは、忘れなかった。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yurzhang's Blog">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/【题解】-Luogu5431-乘法逆元2/" class="post-title-link" itemprop="url">【题解】[Luogu5431]乘法逆元2</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-31 19:22:29" itemprop="dateCreated datePublished" datetime="2019-05-31T19:22:29+08:00">2019-05-31</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-02 17:40:53" itemprop="dateModified" datetime="2019-08-02T17:40:53+08:00">2019-08-02</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>此处[题面](<a href="https://www.luogu.org/problem/P5431" target="_blank" rel="noopener">https://www.luogu.org/problem/P5431</a>)</p>
+<hr>
+<h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><p>其实我觉得这道题的考点是快读.jpg<br>[没有快读的后果](<a href="https://www.luogu.org/recordnew/show/19507084" target="_blank" rel="noopener">https://www.luogu.org/recordnew/show/19507084</a>)</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/【题解】-Luogu5431-乘法逆元2/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【题解】-Luogu4315-月下“毛景树”/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yurzhang">
+      <meta itemprop="description" content="眩しさだけは、忘れなかった。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yurzhang's Blog">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/【题解】-Luogu4315-月下“毛景树”/" class="post-title-link" itemprop="url">【题解】[Luogu4315]月下“毛景树”</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 16:39:43" itemprop="dateCreated datePublished" datetime="2019-03-10T16:39:43+08:00">2019-03-10</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-02 17:39:23" itemprop="dateModified" datetime="2019-08-02T17:39:23+08:00">2019-08-02</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>此处[题面](<a href="https://www.luogu.org/problem/P4315" target="_blank" rel="noopener">https://www.luogu.org/problem/P4315</a>)</p>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这道题其实就是把 <code>单点修改</code> 、 <code>区间染色</code> 、 <code>区间加</code> 以及 <code>区间最大值</code> 这四种基本的序列操作出到了树上，很明显是用 <code>树链剖分</code> + <code>线段树</code> 解决，但是因为我太蒻了，树剖码到一半码不下去了，所以就全删了改码了个 <code>Link/Cut Tree</code> ，顺便 <strong>拿了这个题的[RANK1](<a href="https://www.luogu.org/record/list?pid=P4315&amp;orderBy=1&amp;status=&amp;page=1" target="_blank" rel="noopener">https://www.luogu.org/record/list?pid=P4315&amp;orderBy=1&amp;status=&amp;page=1</a>)</strong> 。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/【题解】-Luogu4315-月下“毛景树”/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【置顶】学习资料/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yurzhang">
+      <meta itemprop="description" content="眩しさだけは、忘れなかった。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yurzhang's Blog">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/【置顶】学习资料/" class="post-title-link" itemprop="url">【置顶】学习资料</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-18 16:27:00" itemprop="dateCreated datePublished" datetime="2019-02-18T16:27:00+08:00">2019-02-18</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-02 17:42:03" itemprop="dateModified" datetime="2019-08-02T17:42:03+08:00">2019-08-02</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>收集的一些资料，留给自己慢慢啃。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/【置顶】学习资料/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【题解】-Luogu3372-线段树1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yurzhang">
+      <meta itemprop="description" content="眩しさだけは、忘れなかった。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yurzhang's Blog">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/【题解】-Luogu3372-线段树1/" class="post-title-link" itemprop="url">【题解】[Luogu3372]线段树1</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-06 21:39:59" itemprop="dateCreated datePublished" datetime="2019-02-06T21:39:59+08:00">2019-02-06</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-02 17:37:57" itemprop="dateModified" datetime="2019-08-02T17:37:57+08:00">2019-08-02</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>此处[题面](<a href="https://www.luogu.org/problem/P3372" target="_blank" rel="noopener">https://www.luogu.org/problem/P3372</a>)</p>
+<hr>
+<p>去了 WC2019 的同学应该对 <strong>指令集</strong> 有些印象，没去的同学 ( 比如<del>我</del> ) 可能也通过一些途径了解到了这个暴力踩标程的毒瘤 ( 据说现场踩 <code>Ynoi五彩斑斓的世界</code>  ) 。但是由于我太弱，实在过不了那道题 <strong>dllxl Orz</strong> ，所以我就来拿这道题练手了。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/【题解】-Luogu3372-线段树1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【题解】-JLOI2014-松鼠的新家/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yurzhang">
+      <meta itemprop="description" content="眩しさだけは、忘れなかった。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yurzhang's Blog">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/【题解】-JLOI2014-松鼠的新家/" class="post-title-link" itemprop="url">【题解】[JLOI2014]松鼠的新家</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-02 20:53:34" itemprop="dateCreated datePublished" datetime="2019-02-02T20:53:34+08:00">2019-02-02</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-02 17:35:57" itemprop="dateModified" datetime="2019-08-02T17:35:57+08:00">2019-08-02</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>此处[题面](<a href="https://www.luogu.org/problem/P3258" target="_blank" rel="noopener">https://www.luogu.org/problem/P3258</a>)</p>
+<hr>
+<p>由于树上两点路径唯一，维尼的路线也是唯一的，因此我们只要 <strong>统计维尼经过每个点的次数</strong> 即可。而树上路径又跟 LCA 什么的有关，因此这道题的做法就多种多样了。</p>
+<p>由于只有一次询问，比较容易想到的做法是 <strong>树上差分</strong> 后求 LCA 轻松搞定。再想深一点你会发现这道题简直就是 <strong>树链剖分</strong> 的板子，再加上这道题不用维护什么子树信息，所以 <strong>树链剖分</strong> 能做 <strong>Link/Cut Tree</strong> 当然也能做！</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/【题解】-JLOI2014-松鼠的新家/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【题解】-SDOI2011-染色/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yurzhang">
+      <meta itemprop="description" content="眩しさだけは、忘れなかった。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yurzhang's Blog">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/【题解】-SDOI2011-染色/" class="post-title-link" itemprop="url">【题解】[SDOI2011]染色</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-12 18:40:51" itemprop="dateCreated datePublished" datetime="2019-01-12T18:40:51+08:00">2019-01-12</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-02 17:42:28" itemprop="dateModified" datetime="2019-08-02T17:42:28+08:00">2019-08-02</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>此处[题面](<a href="https://www.luogu.org/problem/P2486" target="_blank" rel="noopener">https://www.luogu.org/problem/P2486</a>)</p>
+<hr>
+<p>这道题的做法其实已经很明显了， <code>树链剖分</code> + <code>线段树</code> ，只是看到区间赋值心血来潮想用 <code>珂朵莉树</code> 水，结果就过了╮(╯▽╰)╭</p>
+<p>操作 1 就是 <code>区间推平 ( assign )</code> ，操作 2 可以像找 <code>最近公共祖先 ( LCA )</code> 一样一边往上方跳一边统计，由于珂朵莉树的结点存储的是一段值相同的连续区间，我们只需要记录上一次访问的结点的值与当前结点的值比较，若不同则更新并计数。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/【题解】-SDOI2011-染色/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/【题解】-Luogu1047-校门外的树/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yurzhang">
+      <meta itemprop="description" content="眩しさだけは、忘れなかった。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yurzhang's Blog">
+    </span>
+      <header class="post-header">
+
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/【题解】-Luogu1047-校门外的树/" class="post-title-link" itemprop="url">【题解】[Luogu1047]校门外的树</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-18 16:11:45" itemprop="dateCreated datePublished" datetime="2018-10-18T16:11:45+08:00">2018-10-18</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-02 17:36:55" itemprop="dateModified" datetime="2019-08-02T17:36:55+08:00">2019-08-02</time>
+              </span>
+            
+          
+
+          <br>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>此处[题面](<a href="https://www.luogu.org/problem/P1047" target="_blank" rel="noopener">https://www.luogu.org/problem/P1047</a>)</p>
+<hr>
+<p>看见一堆 dalao 题解写树状数组线段树，蒟蒻在这里安利一种<strong>毒瘤数据结构</strong>——珂朵莉树。</p>
+<h3 id="一、介绍。"><a href="#一、介绍。" class="headerlink" title="一、介绍。"></a>一、介绍。</h3><p>珂朵莉树 (ChthollyTree) ，又名 OldDriverTree <del>(老司机树)</del>，简称 ODT ，是一种非常暴力的数据结构，它将一段值相同的区间以三元组 &lt; 左端点，右端点，值 &gt; 的方式存储起来，因此它的效率是建立在区间推平操作 (assign) 上的(也就是本题的砍树)。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/【题解】-Luogu1047-校门外的树/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -361,9 +1281,40 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span>
+        
       </div>
     
   </nav>
@@ -563,6 +1514,10 @@
   </div>
 
   
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/jquery/index.js?v=3.4.1"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
