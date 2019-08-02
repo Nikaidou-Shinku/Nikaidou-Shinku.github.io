@@ -57,18 +57,18 @@
   };
 </script>
 
-  <meta name="description" content="此处[题面](https://www.luogu.org/problem/P4315)  前言这道题其实就是把 单点修改 、 区间染色 、 区间加 以及 区间最大值 这四种基本的序列操作出到了树上，很明显是用 树链剖分 + 线段树 解决，但是因为我太蒻了，树剖码到一半码不下去了，所以就全删了改码了个 Link/Cut Tree ，顺便 拿了这个题的[RANK1](https://www.luogu">
+  <meta name="description" content="此处[题面](https://www.luogu.org/problem/P4315)  前言这道题其实就是把 单点修改 、 区间染色 、 区间加 以及 区间最大值 这四种基本的序列操作出到了树上">
 <meta name="keywords" content="题解,Link&#x2F;Cut Tree">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【题解】[Luogu4315]月下“毛景树”">
 <meta property="og:url" content="http://yoursite.com/【题解】-Luogu4315-月下“毛景树”/index.html">
 <meta property="og:site_name" content="yurzhang&#39;s Blog">
-<meta property="og:description" content="此处[题面](https://www.luogu.org/problem/P4315)  前言这道题其实就是把 单点修改 、 区间染色 、 区间加 以及 区间最大值 这四种基本的序列操作出到了树上，很明显是用 树链剖分 + 线段树 解决，但是因为我太蒻了，树剖码到一半码不下去了，所以就全删了改码了个 Link/Cut Tree ，顺便 拿了这个题的[RANK1](https://www.luogu">
+<meta property="og:description" content="此处[题面](https://www.luogu.org/problem/P4315)  前言这道题其实就是把 单点修改 、 区间染色 、 区间加 以及 区间最大值 这四种基本的序列操作出到了树上">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-02T09:39:23.418Z">
+<meta property="og:updated_time" content="2019-08-02T10:19:57.262Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【题解】[Luogu4315]月下“毛景树”">
-<meta name="twitter:description" content="此处[题面](https://www.luogu.org/problem/P4315)  前言这道题其实就是把 单点修改 、 区间染色 、 区间加 以及 区间最大值 这四种基本的序列操作出到了树上，很明显是用 树链剖分 + 线段树 解决，但是因为我太蒻了，树剖码到一半码不下去了，所以就全删了改码了个 Link/Cut Tree ，顺便 拿了这个题的[RANK1](https://www.luogu">
+<meta name="twitter:description" content="此处[题面](https://www.luogu.org/problem/P4315)  前言这道题其实就是把 单点修改 、 区间染色 、 区间加 以及 区间最大值 这四种基本的序列操作出到了树上">
   <link rel="canonical" href="http://yoursite.com/【题解】-Luogu4315-月下“毛景树”/">
 
 
@@ -291,7 +291,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-02 17:39:23" itemprop="dateModified" datetime="2019-08-02T17:39:23+08:00">2019-08-02</time>
+                <time title="修改时间：2019-08-02 18:19:57" itemprop="dateModified" datetime="2019-08-02T18:19:57+08:00">2019-08-02</time>
               </span>
             
           
@@ -318,9 +318,7 @@
       
         <p>此处[题面](<a href="https://www.luogu.org/problem/P4315" target="_blank" rel="noopener">https://www.luogu.org/problem/P4315</a>)</p>
 <hr>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这道题其实就是把 <code>单点修改</code> 、 <code>区间染色</code> 、 <code>区间加</code> 以及 <code>区间最大值</code> 这四种基本的序列操作出到了树上，很明显是用 <code>树链剖分</code> + <code>线段树</code> 解决，但是因为我太蒻了，树剖码到一半码不下去了，所以就全删了改码了个 <code>Link/Cut Tree</code> ，顺便 <strong>拿了这个题的[RANK1](<a href="https://www.luogu.org/record/list?pid=P4315&amp;orderBy=1&amp;status=&amp;page=1" target="_blank" rel="noopener">https://www.luogu.org/record/list?pid=P4315&amp;orderBy=1&amp;status=&amp;page=1</a>)</strong> 。</p>
-<a id="more"></a>
-
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这道题其实就是把 <code>单点修改</code> 、 <code>区间染色</code> 、 <code>区间加</code> 以及 <code>区间最大值</code> 这四种基本的序列操作出到了树上<a id="more"></a>，很明显是用 <code>树链剖分</code> + <code>线段树</code> 解决，但是因为我太蒻了，树剖码到一半码不下去了，所以就全删了改码了个 <code>Link/Cut Tree</code> ，顺便 <strong>拿了这个题的[RANK1](<a href="https://www.luogu.org/record/list?pid=P4315&amp;orderBy=1&amp;status=&amp;page=1" target="_blank" rel="noopener">https://www.luogu.org/record/list?pid=P4315&amp;orderBy=1&amp;status=&amp;page=1</a>)</strong> 。</p>
 <hr>
 <h2 id="边转点"><a href="#边转点" class="headerlink" title="边转点"></a>边转点</h2><p>树剖的边转点大家都知道是把每条边的权值给深度较深的那个点，但是我们不能在 <code>LCT</code> 上也这么做，因为有 <code>makeroot</code> 操作的存在， <code>LCT</code> 上结点的父子关系不是确定的，所以我们采取建立 <code>虚拟结点</code> 的方式：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第 i 条边连接 u 和 v 这两个点，权值为 w</span></span><br><span class="line">val[n+i]=maxv[n+i]=w;</span><br><span class="line">link(u,n+i);</span><br><span class="line">link(n+i,v);</span><br></pre></td></tr></table></figure>
